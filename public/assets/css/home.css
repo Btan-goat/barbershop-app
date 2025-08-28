@@ -124,7 +124,7 @@ p {
     url("../../../storage/uploads/hero.jpg");
   background-size: cover;
   background-position: center;
-  min-height: 145vh;
+  min-height: 130vh;
   display: flex;
   align-items: center;
   position: relative;
@@ -132,7 +132,7 @@ p {
 
 .hero-content {
   text-align: center;
-  transform: translateY(-80px);
+  transform: translateY(-100px);
   color: var(--color-light);
   max-width: 800px;
   margin: 0 auto;
@@ -292,13 +292,14 @@ p {
 
 .highlight-card h3 {
   font-size: var(--fs-h3); /* Tailwind: text-xl */
+  color: var(--color-dark);
   font-weight: 600; /* Tailwind: font-semibold */
   margin-bottom: 1rem;
 }
 
 .highlight-card p {
   font-size: var(--fs-p);
-  color: var(--color-light);
+  color: var(--color-dark);
 }
 
 /* Icon container */
@@ -314,7 +315,7 @@ p {
 }
 
 .icon-container i {
-  color: var(--color-light);
+  color: var(--color-gold);
   font-size: var(--fs-h3); /* Tailwind: text-3xl */
 }
 
@@ -331,7 +332,7 @@ p {
 }
 
 .icon-container {
-  background: linear-gradient(135deg, var(--color-primary) var(--color-gold));
+  background: linear-gradient(135deg, var(--color-primary), var(--color-gold));
 }
 
 /* Services */

@@ -86,6 +86,10 @@
         </div>
     </section>
 
+    <div class="section-seal">
+        <img src="assets/img/seal.png" alt="S">
+    </div>
+
     <!-- Services Section -->
     <section class="section services-section" style="background: url('../storage/uploads/gray_gradient.png');" id="services">
         <h2 class="section-title fade-in">Our Services</h2>
@@ -118,6 +122,10 @@
             </div>
         </div>
     </section>
+
+    <div class="red-x">
+        <img src="../storage/uploads/red-x.svg" alt="">
+    </div>
 
     <!-- Gallery Section -->
     <section class="section" style="background: #f8f9fa;">
