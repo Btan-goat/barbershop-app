@@ -34,15 +34,15 @@
         </div>
     </section>
 
-    <div class="section-seal">
-        <img src="assets/img/seal.png" alt="S">
+    <div class="red-x">
+        <img src="../storage/uploads/red-x.svg" alt="">
     </div>
 
     <!-- Quick Highlights Section -->
     <section class="section highlights-section">
         <div class="highlights-container">
             <div class="highlights-header">
-                <h2>Why Choose ModernCuts</h2>
+                <h2>Why Choose Barber Sure</h2>
                 <p>Discover what sets our barbershop apart from the rest with our exceptional services and commitment to quality.</p>
             </div>
 

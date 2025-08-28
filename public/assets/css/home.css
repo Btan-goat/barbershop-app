@@ -206,6 +206,27 @@ p {
   transform: rotate(-45deg);
 }
 
+/* Section Red X */
+.red-x {
+  width: 80px;
+  height: 80px;
+  margin: -40px auto; /* overlaps between sections, centered horizontally */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: rotate(45deg);
+  position: relative;
+  z-index: 2;
+}
+
+.red-x img {
+  width: 80%;
+  height: 80%;
+  object-fit: contain;
+  display: block;
+  transform: rotate(-45deg);
+}
+
 /* Sections */
 .section {
   padding: var(--space-section) 20px;
@@ -221,7 +242,6 @@ p {
 /* Intro Section */
 .intro-section {
   background: url("../../../storage/uploads/gray_gradient.png");
-  /* You can also add other background properties if needed */
   background-size: cover;
   background-position: center;
 }
@@ -231,8 +251,12 @@ p {
 }
 
 /* Highlights Section */
+.highlights-section {
+  background-color: var(--color-dark);
+}
+
 .highlights-section h2 {
-  color: var(--color-dark);
+  color: var(--color-gold);
 }
 
 .highlights-container {
@@ -247,39 +271,34 @@ p {
 }
 
 .highlights-header h2 {
-  font-size: 2rem; /* Tailwind: text-3xl */
+  font-size: var(--fs-h2);
   margin-bottom: 1rem;
 }
 
-@media (min-width: 768px) {
-  .highlights-header h2 {
-    font-size: 2.25rem; /* Tailwind: md:text-4xl */
-  }
-}
-
 .highlights-header p {
-  font-size: 1.125rem; /* Tailwind: text-lg */
-  max-width: 42rem; /* Tailwind: max-w-2xl */
+  font-size: var(--fs-p);
+  font-family: var(--font-p);
+  max-width: 42rem;
   margin: 0 auto;
 }
 
 /* Highlight cards */
 .highlight-card {
-  background: #fff;
-  border-radius: 0.75rem; /* Tailwind: rounded-xl */
+  background: var(--color-light);
+  border-radius: var(--radius-card); /* Tailwind: rounded-xl */
   padding: 2rem; /* Tailwind: p-8 */
   text-align: center;
 }
 
 .highlight-card h3 {
-  font-size: 1.25rem; /* Tailwind: text-xl */
+  font-size: var(--fs-h3); /* Tailwind: text-xl */
   font-weight: 600; /* Tailwind: font-semibold */
   margin-bottom: 1rem;
 }
 
 .highlight-card p {
-  font-size: 1rem;
-  color: #333;
+  font-size: var(--fs-p);
+  color: var(--color-light);
 }
 
 /* Icon container */
@@ -291,28 +310,28 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #111; /* you can set brand color */
+  background: var(--color-dark); /* you can set brand color */
 }
 
 .icon-container i {
-  color: #fff;
-  font-size: 1.875rem; /* Tailwind: text-3xl */
+  color: var(--color-light);
+  font-size: var(--fs-h3); /* Tailwind: text-3xl */
 }
 
 .highlight-card {
   transition: all 0.3s ease;
-  border: 1px solid #e5e7eb;
+  border: 1px solid var(--color-secondary);
 }
 
 .highlight-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
     0 10px 10px -5px rgba(0, 0, 0, 0.04);
-  border-color: #3b82f6;
+  border-color: var(--color-gold);
 }
 
 .icon-container {
-  background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+  background: linear-gradient(135deg, var(--color-primary) var(--color-gold));
 }
 
 /* Services */
@@ -434,5 +453,9 @@ footer {
 
   .section-title {
     font-size: 2rem;
+  }
+
+  .highlights-header h2 {
+    font-size: 2.25rem; /* Tailwind: md:text-4xl */
   }
 }
