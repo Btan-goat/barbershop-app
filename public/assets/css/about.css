@@ -216,6 +216,10 @@ p {
     padding: 100px 0;
 }
 
+.intro p {
+    font-family: var(--font-h3);
+}
+
 /* Mission Section */
 .mission {
     background: url("../../../storage/uploads/gray_gradient.png");

@@ -262,6 +262,10 @@ p {
     padding: 100px 0;
 }
 
+.header-section p {
+    font-family: var(--font-h3);
+}
+
 .subtitle {
     font-family: var(--font-p);
     font-size: 1.3rem;

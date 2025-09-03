@@ -267,6 +267,10 @@ p {
     position: relative;
 }
 
+.hero h3 {
+    font-size: 1.3rem;
+}
+
 .hero-content {
     text-align: center;
     transform: translateY(-100px);
