@@ -26,7 +26,6 @@
     <section class="intro">
         <div class="container">
             <h1 class="fade-in">About Us</h1>
-            <p class="fade-in">Barber Sure is a revolutionary platform that bridges the gap between barbers and their clients. We're dedicated to transforming the way people discover, book, and experience barber services. Our platform brings together the best barbershops and skilled professionals in one convenient place.</p>
             <p class="fade-in">We believe that everyone deserves a great haircut from a professional who understands their style and preferences. That's why we've created a seamless experience that connects clients with barbers who are perfect for their needs.</p>
         </div>
     </section>

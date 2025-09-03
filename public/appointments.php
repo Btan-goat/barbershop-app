@@ -27,10 +27,6 @@
             <p class="fade-in">
                 Find and book trusted barbershops near you with ease. Our platform helps you discover skilled barbers, compare services, and schedule appointments—all in one convenient place.
             </p>
-            <p class="fade-in">
-                We make it simple to get the haircut or grooming service you want, at a time that works for you. Connect with professional barbers who understand your style and enjoy a hassle-free booking experience.
-            </p>
-
         </div>
     </section>
 
@@ -66,7 +62,7 @@
                             Downtown District
                         </p>
                         <p class="shop-services">Haircuts, Beard Trimming, Shaves</p>
-                        <button class="book-btn btn-primary" onclick="showBookingForm(1)">Book Now</button>
+                        <button class="book-btn btn-secondary" onclick="showBookingForm(1)">Book Now</button>
                     </div>
                 </div>
 
@@ -79,7 +75,7 @@
                             Westside Mall
                         </p>
                         <p class="shop-services">Fades, Hair Coloring, Styling</p>
-                        <button class="book-btn btn-primary" onclick="showBookingForm(2)">Book Now</button>
+                        <button class="book-btn btn-secondary" onclick="showBookingForm(2)">Book Now</button>
                     </div>
                 </div>
 
@@ -92,7 +88,7 @@
                             Historic District
                         </p>
                         <p class="shop-services">Hot Towel Shaves, Haircuts, Facial Treatments</p>
-                        <button class="book-btn btn-primary" onclick="showBookingForm(3)">Book Now</button>
+                        <button class="book-btn btn-secondary" onclick="showBookingForm(3)">Book Now</button>
                     </div>
                 </div>
             </div>
