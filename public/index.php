@@ -23,13 +23,12 @@
 
 <body>
     <!-- Hero Section -->
-    <section class="hero">
+    <section id="hero" class="hero">
         <div class="hero-content">
             <h1 class="hero-title fade-in">Welcome to <span class="hero-highlight">Barber Sure</span></h1>
             <h3 class="hero-subtitle fade-in">Find and Book the Best Barbershops Near You</h3>
             <div class="hero-buttons">
-                <button class="btn-primary fade-in" onclick="scrollToSection('services')">Book Appointment</button>
-                <button class="btn-secondary fade-in" onclick="scrollToSection('services')">Search Barbershop</button>
+                <a href="#book" class="btn-primary fade-in">Book Appointment</a>
             </div>
         </div>
     </section>
@@ -39,12 +38,12 @@
     </div>
 
     <!-- Quick About Section -->
-    <section class="section about">
+    <section id="about" class="section about">
         <div class="about-content">
             <h2 class="section-title fade-in">Welcome to Barber Sure</h2>
             <p class="fade-in">We connect you with the best barbershops in your area. Our platform makes it easy to discover, book, and enjoy quality grooming services from talented professionals. Experience the convenience of online booking and find your perfect style today.
             </p>
-            <a href="#" class="btn-primary fade-in">Learn More</a>
+            <a href="about.php" class="btn-primary fade-in">Learn More</a>
         </div>
     </section>
 
@@ -53,7 +52,7 @@
     </div>
 
     <!-- Featured Barbershops Section -->
-    <section class="section shops">
+    <section id="shop" class="section shops">
         <h2 class="section-title fade-in">Featured Barbershops</h2>
         <div class="shop-grid fade-in">
             <div class="shop-card scale-in">
@@ -113,7 +112,7 @@
     </div>
 
     <!-- Why Book With Us Section -->
-    <section class="section why-us">
+    <section id="book" class="section why-us">
         <div class="container">
             <h2 class="section-title fade-in">Why Book With Us</h2>
             <div class="benefits fade-in">
@@ -167,7 +166,7 @@
     </div>
 
     <!-- Stay Connected Section -->
-    <section class="section stay-connected">
+    <section id="contact" class="section stay-connected">
         <div class="container fade-in">
             <div class="stay-connected-content">
                 <h2 class="section-title">Stay Connected</h2>

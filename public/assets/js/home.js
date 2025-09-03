@@ -12,28 +12,3 @@ function scrollToSection(sectionId) {
         behavior: "smooth",
     });
 }
-
-//Scorlling animation
-document.addEventListener("DOMContentLoaded", () => {
-    // Select all elements that should animate
-    const animElements = document.querySelectorAll(
-        ".fade-in, .scale-in, .slide-in-left, .slide-in-right"
-    );
-
-    // Create IntersectionObserver
-    const observer = new IntersectionObserver(
-        (entries) => {
-            entries.forEach((entry) => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add("visible"); // trigger animation
-                } else {
-                    entry.target.classList.remove("visible"); // reset for re-animation
-                }
-            });
-        },
-        { threshold: 0.1 } // trigger when 10% of element is visible
-    );
-
-    // Observe each element
-    animElements.forEach((el) => observer.observe(el));
-});
