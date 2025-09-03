@@ -1,24 +1,36 @@
 <?php include 'partials/header.php'; ?>
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Barber Sure</title>
+    <!-- Tailwind -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- CSS Styles -->
+    <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="assets/css/home.css">
+    <!-- Icons from Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=UnifrakturCook:wght@700&family=UnifrakturMaguntia&display=swap" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
+
 <body>
     <!-- Hero Section -->
     <section class="hero">
         <div class="hero-content">
-            <h1 class="hero-title fade-in"><span class="hero-highlight">Fresh Cuts</span> Clean Style</h1>
-            <h3 class="hero-subtitle fade-in">Professional barbers, modern styles, and classic service.</h3>
-            <button class="btn-primary fade-in" onclick="scrollToSection('services')"><span class="btn-primary-span">Book Appointment</span></button>
+            <h1 class="hero-title fade-in">Welcome to <span class="hero-highlight">Barber Sure</span></h1>
+            <h3 class="hero-subtitle fade-in">Find and Book the Best Barbershops Near You</h3>
+            <div class="hero-buttons">
+                <button class="btn-primary fade-in" onclick="scrollToSection('services')">Book Appointment</button>
+                <button class="btn-secondary fade-in" onclick="scrollToSection('services')">Search Barbershop</button>
+            </div>
         </div>
     </section>
 
@@ -26,11 +38,13 @@
         <img src="assets/img/seal.png" alt="S">
     </div>
 
-    <!-- Intro Section -->
-    <section class="intro-section section flex items-center justify-center">
-        <div class="intro-content max-w-3xl text-center">
+    <!-- Quick About Section -->
+    <section class="section about">
+        <div class="about-content">
             <h2 class="section-title fade-in">Welcome to Barber Sure</h2>
-            <p class="fade-in">Your destination for classic cuts, premium grooming, and a timeless barbershop experience. Discover our services, browse our shop, and book your next appointment with ease.</p>
+            <p class="fade-in">We connect you with the best barbershops in your area. Our platform makes it easy to discover, book, and enjoy quality grooming services from talented professionals. Experience the convenience of online booking and find your perfect style today.
+            </p>
+            <a href="#" class="btn-primary fade-in">Learn More</a>
         </div>
     </section>
 
@@ -38,50 +52,97 @@
         <img src="../storage/uploads/red-x.svg" alt="">
     </div>
 
-    <!-- Quick Highlights Section -->
-    <section class="section highlights-section">
-        <div class="highlights-container">
-            <div class="highlights-header">
-                <h2>Why Choose Barber Sure</h2>
-                <p>Discover what sets our barbershop apart from the rest with our exceptional services and commitment to quality.</p>
+    <!-- Featured Barbershops Section -->
+    <section class="section shops">
+        <h2 class="section-title fade-in">Featured Barbershops</h2>
+        <div class="shop-grid fade-in">
+            <div class="shop-card scale-in">
+                <div class="shop-img">Barbershop Image</div>
+                <div class="shop-info">
+                    <h3>Classic Cuts</h3>
+                    <div class="shop-location">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Downtown District</span>
+                    </div>
+                    <p>Specializing in traditional cuts and straight razor shaves.</p>
+                </div>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                <!-- Experienced Barbers -->
-                <div class="highlight-card">
-                    <div class="icon-container">
-                        <i class="fas fa-scissors"></i>
+            <div class="shop-card scale-in">
+                <div class="shop-img">Barbershop Image</div>
+                <div class="shop-info">
+                    <h3>Modern Styles</h3>
+                    <div class="shop-location">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Uptown Area</span>
                     </div>
-                    <h3>Experienced Barbers</h3>
-                    <p>Our master barbers bring years of expertise and precision to every cut, ensuring you get the perfect style every time.</p>
+                    <p>Contemporary styles and trends for the modern gentleman.</p>
+                </div>
+            </div>
+
+            <div class="shop-card scale-in">
+                <div class="shop-img">Barbershop Image</div>
+                <div class="shop-info">
+                    <h3>Executive Grooming</h3>
+                    <div class="shop-location">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Financial District</span>
+                    </div>
+                    <p>Premium services for professionals on the go.</p>
+                </div>
+            </div>
+            <div class="shop-card scale-in">
+                <div class="shop-img">Barbershop Image</div>
+                <div class="shop-info">
+                    <h3>Tipuno</h3>
+                    <div class="shop-location">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Big Ben</span>
+                    </div>
+                    <p>Premium services for professionals on the go.</p>
+                </div>
+            </div>
+        </div>
+        <div class="view-all">
+            <a href="#" class="btn-secondary fade-in">View All Barbershops</a>
+        </div>
+    </section>
+
+    <div class="red-x">
+        <img src="../storage/uploads/red-x.svg" alt="">
+    </div>
+
+    <!-- Why Book With Us Section -->
+    <section class="section why-us">
+        <div class="container">
+            <h2 class="section-title fade-in">Why Book With Us</h2>
+            <div class="benefits fade-in">
+                <div class="benefit slide-in-left">
+                    <div class="benefit-icon">
+                        <i class="fas fa-calendar-check"></i>
+                    </div>
+                    <h3>Easy Booking</h3>
+                    <p>Book appointments in just a few clicks, 24/7 from any device.</p>
                 </div>
 
-                <!-- Affordable Pricing -->
-                <div class="highlight-card">
-                    <div class="icon-container">
-                        <i class="fas fa-tag"></i>
+                <div class="benefit fade-in">
+                    <div class="benefit-icon">
+                        <i class="fas fa-star"></i>
                     </div>
-                    <h3>Affordable Pricing</h3>
-                    <p>Quality grooming shouldn't break the bank. We offer competitive prices for premium services without compromising on quality.</p>
+                    <h3>Quality Assured</h3>
+                    <p>All barbershops are vetted for quality and customer satisfaction.</p>
                 </div>
 
-                <!-- Modern & Classic Styles -->
-                <div class="highlight-card">
-                    <div class="icon-container">
-                        <i class="fas fa-cut"></i>
+                <div class="benefit slide-in-right">
+                    <div class="benefit-icon">
+                        <i class="fas fa-clock"></i>
                     </div>
-                    <h3>Modern & Classic Styles</h3>
-                    <p>From timeless classics to contemporary trends, we master all styles to keep you looking sharp and stylish.</p>
+                    <h3>Save Time</h3>
+                    <p>No more waiting in line or phone calls. Book instantly online.</p>
                 </div>
-
-                <!-- Walk-ins Welcome -->
-                <div class="highlight-card">
-                    <div class="icon-container">
-                        <i class="fas fa-door-open"></i>
-                    </div>
-                    <h3>Walk-ins Welcome</h3>
-                    <p>No appointment necessary! Feel free to walk in anytime for a quick trim or a complete style transformation.</p>
-                </div>
+            </div>
+            <div class="cta-center">
+                <a href="#" class="btn-primary fade-in">Book an Appointment</a>
             </div>
         </div>
     </section>
@@ -90,35 +151,13 @@
         <img src="assets/img/seal.png" alt="S">
     </div>
 
-    <!-- Services Section -->
-    <section class="section services-section" style="background: url('../storage/uploads/gray_gradient.png');" id="services">
-        <h2 class="section-title fade-in">Our Services</h2>
-        <div class="services-grid">
-            <div class="service-card scale-in">
-                <div class="service-icon">
-                    <i class="fas fa-cut"></i>
-                </div>
-                <h3 class="text-xl font-bold mb-2 slide-in-left">Classic Haircut</h3>
-                <p class="slide-in-left">Traditional haircut with modern precision. Includes consultation, cut, and style.</p>
-                <p class="text-2xl font-bold text-[#d4af37] mt-4">$35</p>
-            </div>
-            
-            <div class="service-card scale-in">
-                <div class="service-icon">
-                    <i class="fas fa-magic"></i>
-                </div>
-                <h3 class="text-xl font-bold mb-2 fade-in">Beard Trim & Style</h3>
-                <p class="fade-in">Professional beard shaping and trimming with hot towel treatment.</p>
-                <p class="text-2xl font-bold text-[#d4af37] mt-4">$25</p>
-            </div>
-            
-            <div class="service-card scale-in">
-                <div class="service-icon">
-                    <i class="fas fa-spa"></i>
-                </div>
-                <h3 class="text-xl font-bold mb-2 slide-in-right">Royal Treatment</h3>
-                <p class="slide-in-right">Complete package: haircut, beard trim, hot towel, and luxury products.</p>
-                <p class="text-2xl font-bold text-[#d4af37] mt-4">$60</p>
+    <!-- Register Your Barbershop Section -->
+    <section class="section register">
+        <div class="container">
+            <div class="register-content fade-in">
+                <h2 class="section-title ">Register Your Barbershop</h2>
+                <p class="scale-in">Join our platform to reach more customers and grow your business. We provide the tools to manage bookings, showcase your work, and connect with clients.</p>
+                <a href="#" class="btn-secondary">Register Your Shop</a>
             </div>
         </div>
     </section>
@@ -127,69 +166,23 @@
         <img src="../storage/uploads/red-x.svg" alt="">
     </div>
 
-    <!-- Gallery Section -->
-    <section class="section" style="background: #f8f9fa;">
-        <h2 class="section-title">Our Work</h2>
-        <div class="gallery-grid">
-            <div class="gallery-item">
-                <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/9d7ea95d-5e2b-4d1e-b6e6-03d2a713a2a5.png" alt="Before and after transformation of a gentleman's haircut from messy to sharp fade" />
-            </div>
-            <div class="gallery-item">
-                <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/c07d957f-f237-402f-b47c-512f81572c02.png" alt="Barber carefully shaping a client's beard with precision clippers in a well-lit barber chair" />
-            </div>
-            <div class="gallery-item">
-                <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/5fba4f85-c0d6-42d7-aea7-d62373b25a41.png" alt="Vintage barber station setup with classic tools and modern equipment" />
-            </div>
-            <div class="gallery-item">
-                <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/3c7aaa75-d433-4905-88c8-e33033888b30.png" alt="Satisfied client smiling after receiving a fresh haircut and beard trim" />
+    <!-- Stay Connected Section -->
+    <section class="section stay-connected">
+        <div class="container fade-in">
+            <div class="stay-connected-content">
+                <h2 class="section-title">Stay Connected</h2>
+                <p class="scale-in">Have questions or feedback? We'd love to hear from you. Get in touch with our team for assistance or suggestions.</p>
+                <a href="#" class="btn-primary">Contact Us</a>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section class="section">
-        <h2 class="section-title">Book Your Appointment</h2>
-        <div class="contact-form">
-            <form id="appointmentForm">
-                <div class="form-group">
-                    <input type="text" placeholder="Full Name" required>
-                </div>
-                <div class="form-group">
-                    <input type="email" placeholder="Email Address" required>
-                </div>
-                <div class="form-group">
-                    <input type="tel" placeholder="Phone Number" required>
-                </div>
-                <div class="form-group">
-                    <input type="date" required>
-                </div>
-                <div class="form-group">
-                    <input type="time" required>
-                </div>
-                <div class="form-group">
-                    <textarea placeholder="Special Requests or Notes"></textarea>
-                </div>
-                <button type="submit" class="btn-primary w-full">Confirm Booking</button>
-            </form>
-        </div>
-    </section>
+    <div class="section-seal">
+        <img src="assets/img/seal.png" alt="S">
+    </div>
 
-    <!-- Footer -->
-    <footer>
-        <h3 class="text-2xl mb-4">CLASSIC CUTS BARBERSHOP</h3>
-        <p>123 Barber Street, Downtown City</p>
-        <p>Open Monday - Saturday: 9AM - 7PM</p>
-        <p>Phone: (555) 123-4567</p>
-        
-        <div class="social-links">
-            <a href="#"><i class="fab fa-facebook"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-        </div>
-        
-        <p class="mt-4">© 2024 Classic Cuts Barbershop. All rights reserved.</p>
-    </footer>
+    <?php include 'partials/footer.php'; ?>
     <script src="assets/js/home.js"></script>
 </body>
-</html>
 
+</html>
